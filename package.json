@@ -1,7 +1,13 @@
 {
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
   "devDependencies": {
     "eslint": "^9.39.2",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.4",
+    "@types/node": "^22.10.1"
   }
 }
