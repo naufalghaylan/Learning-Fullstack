@@ -62,6 +62,6 @@ for (let i:number = 0 ; i < n.length;i++ ){
 
     if (next !== undefined && current<next){
         total -= current;
-    } total+= current;
+    } else {total+= current}
 } return total
 };
