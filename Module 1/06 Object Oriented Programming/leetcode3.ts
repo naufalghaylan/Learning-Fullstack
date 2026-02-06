@@ -60,3 +60,67 @@ class MyHashSet {
         } return false
     }
 }
+
+class RangeFreqQuery {
+    private positions: Map<number, number[]>
+
+    constructor(arr: number[]) {
+    this.positions = new Map()
+    for (let i = 0; i < arr.length;i++){
+        if (!this.positions.has(arr[i])){
+            this.positions.set(arr[i], [])
+        } this.positions.get(arr[i]).push(i)
+    }
+
+    }
+
+    private lowerBound(arr: number[], target: number): number {
+    let l = 0
+    let r = arr.length
+
+        while (l < r) {
+            let mid = Math.floor((l + r) / 2)
+
+            if (arr[mid] < target) {
+                l = mid + 1
+            } else {
+                r = mid
+            }
+        }
+
+        return l
+    }
+
+    private upperBound(arr: number[], target: number): number {
+    let l = 0
+    let r = arr.length
+
+        while (l < r) {
+            let mid = Math.floor((l + r) / 2)
+
+            if (arr[mid] <= target) {
+                l = mid + 1
+            } else {
+                r = mid
+            }
+        }
+
+        return l
+    }
+
+
+    query(left: number, right: number, value: number): number {
+        const arrIndex = this.positions.get(value)
+        if (!arrIndex) return 0
+        const leftIndex = this.lowerBound(arrIndex, left)
+        const rightIndex = this.upperBound(arrIndex, right)
+
+        return rightIndex-leftIndex
+    }
+}
+
+/**
+ * Your RangeFreqQuery object will be instantiated and called as such:
+ * var obj = new RangeFreqQuery(arr)
+ * var param_1 = obj.query(left,right,value)
+ */
