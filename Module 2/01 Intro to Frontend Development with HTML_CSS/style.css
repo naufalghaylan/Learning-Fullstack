@@ -1,0 +1,29 @@
+h1 {
+    color: red; font-family: Arial, Helvetica, sans-serif; text-align: center;
+}
+
+h2 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+hr {
+    border-width: 3px;
+    border-color: burlywood;
+}
+
+#header {
+    background-color: black;
+    color:  white;
+}
+#content{
+    background-color: lightblue;
+}
+
+#footer {
+    background-color: darkcyan;
+}
+
+.rounded-corner {
+    border-radius: 15px;
+}

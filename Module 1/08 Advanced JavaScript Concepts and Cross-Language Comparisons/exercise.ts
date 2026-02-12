@@ -25,23 +25,23 @@ for (let i = 0; i < merged.length;i++){
 // console.log(mapMerged);
 
 
-function transform(data: object[]): object[] {
-    let result: object[] = []
+// function transform(data: object[]): object[] {
+//     let result: object[] = []
 
-    for (let i = 0; i < data.length; i++) {
-        let newObj: Record<string, any> = {}
+//     for (let i = 0; i < data.length; i++) {
+//         let newObj: Record<string, any> = {}
 
-        for (const [key, value] of Object.entries(data[i])) {
-            newObj[value] = key
-        }
+//         for (const [key, value] of Object.entries(data[i])) {
+//             newObj[value] = key
+//         }
 
-        result.push(newObj)
-    }
+//         result.push(newObj)
+//     }
 
-    return result
-}
+//     return result
+// }
 
-console.log(transform([{ name: 'David', age: 20 }]));
+// console.log(transform([{ name: 'David', age: 20 }]));
 
 
 
