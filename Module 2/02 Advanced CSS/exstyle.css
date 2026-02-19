@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+
+.testimonials {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 1.25rem;
+    border-radius: 8px;
+    background-color: antiquewhite;
+}
+
+.name{
+    font-size: 0.875rem;
+    font-weight: 600;
+
+}
+
+.status {
+    font-size: 0.75rem;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.paragraph_testimonial{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.heading_testimonial{
+    font-size: 1.5rem;
+    font-weight:600;
+    line-height: 1.3;
+    margin: 0 0 1rem 0;
+}
+
+.card_display {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.card--wide {
+    grid-column: span 2;
+}
+
+.card--xl {
+    grid-column: span 3;
+}
+
+

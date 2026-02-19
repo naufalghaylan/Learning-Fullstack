@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Advanced CSS Techniques</title>
+	</head>
+	<body>
+		<div class="static">
+			Box ini menggunakan position: static. Static adalah default position dari
+			seluruh box html
+		</div>
+		<div class="relative">
+			Box ini menggunakan position: relative. Relative memampukan sebuah box
+			untuk memiliki perpindahan/offset posisi relatif dari posisi awalnya
+		</div>
+        <div class="relative-parent">
+            <div class="relative">
+			Box ini menggunakan position: absolute. Absolute memampukan sebuah box
+			untuk memiliki perpindahan/offset posis tergantung dari posisi relatif
+			parent box-nya</div>
+		
+		</div>
+        <div class="absolute">
+			Box ini menggunakan position: absolute. Absolute memampukan sebuah box
+			untuk memiliki perpindahan/offset posis tergantung dari posisi relatif
+			parent box-nya
+        </div>
+        <div class="absolute-parent">
+            <div class="absolute">
+			Box ini menggunakan position: absolute. Absolute memampukan sebuah box
+			untuk memiliki perpindahan/offset posis tergantung dari posisi relatif
+			parent box-nya</div>
+		
+		</div>    
+		<div class="fixed">
+			Box ini menggunakan position: fixed. Fixed membuat sebuah box diposisikan
+			secara mutlak mengikuti lebar viewport dari screen dan tidak mengikuti
+			kaidah parent child relationship
+		</div>
+		<div class="grid-content">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</div>
+	</body>
+</html>
